@@ -20,10 +20,10 @@ function App(props) {
     setTasks(updateTasks);
    }
 
-   function editTask(id){
+   function editTask(id, isEditing){
     const updateTasks = tasks.filter((task) => {
       if (task.id === id){
-        task.name = props.name
+        task.name = isEditing
       }
       return task;
     })
@@ -46,7 +46,7 @@ function App(props) {
       editTask={editTask}
     />
   ));
-  const [isEditing, setEditing] = useState(false);
+
 
   
 
