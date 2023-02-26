@@ -20,7 +20,7 @@ export default function Todo(props) {
           New name for {props.name}
         </label>
         <input id={props.id}        
-        value={isEditing}
+      //  value={isEditing}
         onChange={handleEdit} 
         className="todo-text" type="text" />
       </div>
